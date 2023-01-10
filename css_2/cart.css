@@ -1,0 +1,127 @@
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.container> h1 {
+	padding: 20px 0;
+}
+.cart{
+	display: flex;
+	
+}
+.products{
+	flex: 0.75;
+	
+}
+.product {
+	display: flex;
+	width: 80%;
+	height: 200px;
+	overflow: hidden;
+	border: 1px solid silver;
+	margin-bottom: 20px;
+}
+.product:hover{
+	border: none;
+	box-shadow: 2px 2px 4px #grey;
+	transform: scale(1.01);
+}
+.product img {
+	height: 200px;
+	width: 150px;
+}
+.product > img:hover{
+	transform: scale(1.04);
+}
+.product-info{
+	padding: 20px;
+	width: 100%;
+	position: relative;
+}.product-name,.product-price,.product-color {
+	margin-bottom :20px;	
+	font-size: 15px;
+}
+.product-remove {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	padding: 10px 25px;
+	background-color: white;
+	color: black;
+	cursor: pointer;
+	border-radius: 5px;
+	border:1px solid black;
+}
+.product-remove:hover{
+	background-color: #ff4d4d;
+	color: white;
+	font-weight: 600;
+	border:1px solid red;
+	
+}
+.product-change a{
+	text-decoration: none;
+	color: black;
+}
+.product-change {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	padding: 10px 8px;
+	background-color: white;
+	color: black;
+	cursor: pointer;
+	border-radius: 5px;
+	border:1px solid black;
+	
+}
+.product-change:hover{
+	background-color: #129851;
+	color:white;
+	font-weight: 600;
+	border:1px solid green;
+	
+}
+.product-quantity > input {
+	width: 40px;
+	padding: 5px;
+	text-align: center;
+}
+.cart-total{
+	flex: 0.25;
+	margin-left: 20px;
+	padding: 20px;
+	height:200px;
+	border: 1px solid silver;
+	border-radius: 5px;
+}
+.cart-total p{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 15px;
+	
+}
+.cart-total a{
+	display: block;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	background-color: tomato;
+	color: white;
+	text-decoration: none;
+}
+.cart-total a:hover{
+	background-color: red;
+	
+}
+@media screen and (max-width: 800px){
+	.cart{
+		flex-direction: column;
+	}
+}
+@media screen and (max-width: 1220px){
+	.container{
+		max-width: 95%;
+	}
+	
+}
